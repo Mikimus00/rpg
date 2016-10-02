@@ -5,24 +5,22 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
-    class Priest : Hero
+    class Wizard : Hero
     {
-       
         string name;
         public int HP;
         int ID;
-        
-        public Priest()
+        public Wizard()
         {
-            base.HP = 150;
+            base.HP = 80;
         }
-        public Priest(int hp)
+        public Wizard(int hp)
         {
             base.HP = hp;
         }
-        public void attack (Hero h_2)
+        public void attack (Hero h_3)
         {
-            h_2.HP -= 5;
+            h_3.HP -= 30;
         }
     }
 }

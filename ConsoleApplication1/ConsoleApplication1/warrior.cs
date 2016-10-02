@@ -24,6 +24,7 @@ namespace ConsoleApplication1
         {
             h_1.HP -= 10;
         }
+        
     }
        
         
