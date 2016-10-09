@@ -7,6 +7,7 @@ namespace ConsoleApplication1
 {
     class Enemy : Hero
     {
+        Random rnd = new Random();
         public int HP;
         int ID;
         public Enemy()
@@ -19,7 +20,9 @@ namespace ConsoleApplication1
         }
         public void attack (Hero h_4)
         {
-            h_4.HP -= 50;
+            rnd = new Random();
+            int dmg = rnd.Next(1, 20);
+            h_4.HP -= dmg;
         }
     }
 }

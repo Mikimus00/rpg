@@ -10,10 +10,10 @@ namespace ConsoleApplication1
         Wizard wiz = new Wizard();
         warrior w = new warrior();
         Priest p = new Priest();
-        int w_1 = 100;
-        int w_2 = 100;
-        int p_1 = 150;
-        int wiz_1 = 80;
+        int h_1 = 100;
+        int h_2 = 100;
+        int h_3 = 150;
+        int h_4 = 80; 
         static void Main(string[] args)
         {
             int target = int.Parse(Console.ReadLine());
@@ -37,7 +37,7 @@ namespace ConsoleApplication1
             switch (pers)
             {
                 case 1:
-                    Console.WriteLine(""); 
+                    Console.WriteLine("");
                     break;
                 case 2:
                     Console.WriteLine("что сделать?");
@@ -46,7 +46,7 @@ namespace ConsoleApplication1
                     switch (target)
                     {
                         case 1:
-
+                            
                             break;
                         case 2:
                             Console.WriteLine("кого бафать?");
@@ -55,7 +55,7 @@ namespace ConsoleApplication1
                             switch (target)
                             {
                                 case 1:
-
+                                    
                                     break;
                                 case 2:
 

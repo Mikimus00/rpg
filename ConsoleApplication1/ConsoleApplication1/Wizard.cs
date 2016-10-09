@@ -7,6 +7,7 @@ namespace ConsoleApplication1
 {
     class Wizard : Hero
     {
+        Random rnd = new Random();
         string name;
         public int HP;
         int ID;
@@ -20,7 +21,9 @@ namespace ConsoleApplication1
         }
         public void attack (Hero h_3)
         {
-            h_3.HP -= 30;
+            rnd = new Random();
+            int dmg = rnd.Next(15, 40);
+            h_3.HP -= dmg;
         }
     }
 }

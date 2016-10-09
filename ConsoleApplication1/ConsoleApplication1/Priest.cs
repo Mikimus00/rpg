@@ -7,7 +7,7 @@ namespace ConsoleApplication1
 {
     class Priest : Hero
     {
-       
+        Random rnd = new Random();
         string name;
         public int HP;
         int ID;
@@ -22,7 +22,9 @@ namespace ConsoleApplication1
         }
         public void attack (Hero h_2)
         {
-            h_2.HP -= 5;
+            rnd = new Random();
+            int dmg = rnd.Next(1, 20);
+            h_2.HP -= dmg;
         }
     }
 }
