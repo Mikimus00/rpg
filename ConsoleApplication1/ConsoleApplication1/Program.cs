@@ -13,7 +13,8 @@ namespace ConsoleApplication1
         int h_1 = 100;
         int h_2 = 100;
         int h_3 = 150;
-        int h_4 = 80; 
+        int h_4 = 80;
+        string name = Console.ReadLine();
         static void Main(string[] args)
         {
             int target = int.Parse(Console.ReadLine());
