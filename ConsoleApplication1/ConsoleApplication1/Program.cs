@@ -7,6 +7,7 @@ namespace ConsoleApplication1
 {
     class Program
     {
+        Application.
         Wizard wiz = new Wizard();
         warrior w = new warrior();
         Priest p = new Priest();
